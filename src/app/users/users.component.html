@@ -1,0 +1,21 @@
+<p>users works!</p>
+
+<!--
+<div class="mat-dialog-content">
+    <div class="form-group">
+        <input type="file" id="file" (change)="handleFileInput($event)"/>        
+    </div>
+    <mat-label *ngIf="uploadResult.success">Success!</mat-label>
+    <mat-error *ngIf="uploadResult.uploadError != null">{{ uploadResult.uploadError }}</mat-error>
+</div>
+-->
+<div class="mat-dialog-actions">
+    <button mat-raised-button color="primary" (click)="openUploadCsvDialog()">UploadDialog</button>
+    <!--
+    <mat-spinner *ngIf="uploadInProgress" [diameter]="30"></mat-spinner>
+    <button mat-raised-button color="primary" [disabled]="uploadInProgress || data.file === null" (click)="onUploadClick()">Upload</button>    
+    <button mat-raised-button color="primary" (click)="onCancelClick()">Cancel</button>
+    -->
+</div>
+
+<app-foo [label]="'some label'"></app-foo>

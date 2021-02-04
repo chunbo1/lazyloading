@@ -1,0 +1,57 @@
+<p>dashboard works!</p>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+             placeholder="Ex. pat@example.com">
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+  
+<app-foo [label]="'some label'"></app-foo>
+<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+
+<mat-form-field class="example-form-field">
+    <mat-label>Clearable input</mat-label>
+    <input matInput type="text" [(ngModel)]="value">
+    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>
+
+<div>
+    <button  color="primary" class="mat-button" (click)="openSnackBar('Item deleted', 'Undo')">SnackBar</button>
+    <button  color="primary" mat-raised-button>Hello World</button>
+    <button color="accent" mat-falt-button>Hello World</button>
+    <button  color="warn" class="mat-stroked-button">CLick</button>
+</div>
+<div>
+    <button color="primary" mat-icon-button>icon</button>
+    <button color="accent" mat-fab>fab</button>
+    <button color="warn" mat-mini-fab>Minj-fab</button>    
+</div>
+
+<div>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold">Bold</mat-button-toggle>
+        <mat-button-toggle value="italic">Italic</mat-button-toggle>
+        <mat-button-toggle value="underline">Underline</mat-button-toggle>
+      </mat-button-toggle-group>
+</div>
+
+<div class="mat-display-4">Display 4</div>
+<div class="mat-display-3">Display 3</div>
+<div class="mat-display-2">Display 2</div>
+<div class="mat-display-1">Display 1</div>
+
+<div class="mat-headline">This is a heading for h1</div>
+<div class="mat-title">This is a heading for h2</div>
+<div class="mat-subheading-2">This is a heading for h3</div>

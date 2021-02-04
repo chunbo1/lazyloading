@@ -1,0 +1,19 @@
+{
+    "CLMServiceUrl": "https://localhost:44390/Enrich/import/csv/recovery",
+    "envionment": "dev",
+    "forceAdmin": true,
+    "allocationRegions": [
+        {
+            "value": "",
+            "Text": "All"
+        },
+        {
+            "value": "Asia",
+            "Text": "Asia"
+        },
+        {
+            "value": "Europe",
+            "Text": "Europe"
+        }        
+    ]
+}

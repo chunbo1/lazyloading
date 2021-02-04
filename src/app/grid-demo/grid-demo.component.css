@@ -1,0 +1,4 @@
+/*
+The mistake I was making was injecting styles in components.scss not in global styles.scss. 
+https://stackoverflow.com/questions/60173453/ag-grid-example-doesnt-display-properly
+*/

@@ -1,0 +1,1 @@
+/* The mistake I was making was injecting styles in components.scss not in global styles.scss*/
